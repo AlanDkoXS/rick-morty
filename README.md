@@ -54,7 +54,7 @@ This project is licensed under the Apache License 2.0 License. See the `LICENSE`
 
 ## Deployment
 
-The webpage is deployed via Netlify. You can access the live site [here](https://github.com/AlanDkoXS/rick-morty).
+The webpage is deployed via Netlify. You can access the live site [here](https://rickandmorty-alanquintana.netlify.app/).
 
 ## Contact
 

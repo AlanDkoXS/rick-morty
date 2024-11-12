@@ -7,46 +7,49 @@
 
 @keyframes spin {
   from {
-    transform: scale(1.1) rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    transform: scale(1.1) rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 .hero {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 200px;
+  top: 0; /* Ajusta el porcentaje según lo que necesites */
+  left: 50%;
+  width: 500px; /* Tamaño fijo en px para el header cuadrado */
+  height: 500px; /* Tamaño fijo en px para el header cuadrado */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transform: translateX(-50%); /* Centra el contenedor en el eje horizontal */
 }
 
 .hero::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -120px;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  background: url('../img/header.jpg') center/cover no-repeat;
-  filter: blur(1px);
-  transform: scale(1.1);
+  background: url('../img/header.png') no-repeat center center; /* Centra la imagen */
+  background-size: 50%; /* Mantiene la imagen cubriendo todo el contenedor */
+  filter: blur(.6px);
   z-index: -1;
+  animation: spin 360s linear infinite; /* Añade la animación de rotación */
 }
 
 .hero__logo {
-  max-width: 350px;
-  width: 90%;
+  max-width: 500px;
+  padding: 1rem;
+  width: 90vw;
   height: auto;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 1));
   animation: float 3s ease-in-out infinite;
   position: absolute;
-  top: 50%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -68,9 +71,6 @@
 }
 
 @media (min-width: 1024px) {
-  .hero {
-    height: 35vh;
-  }
 }
 
 .error {
@@ -81,7 +81,7 @@
 }
 
 .loadingMessage {
-  color: #062024;
+  color: #ffffff;
   font-weight: bold;
   text-align: center;
   margin-top: 0.2rem;

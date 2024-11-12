@@ -6,13 +6,13 @@
 }
 
 @keyframes spin {
-    from {
-      transform: scale(1.1) rotate(0deg);
-    }
-    to {
-      transform: scale(1.1) rotate(360deg);
-    }
+  from {
+    transform: scale(1.1) rotate(0deg);
   }
+  to {
+    transform: scale(1.1) rotate(360deg);
+  }
+}
 
 .hero {
   position: absolute;
@@ -34,11 +34,9 @@
   width: 100vw;
   height: 100%;
   background: url('../img/header.jpg') center/cover no-repeat;
-  filter: blur(1px); /* Aplica el desenfoque al fondo */
-  transform: scale(
-    1.1
-  ); /* Aumenta ligeramente el tamaño para cubrir bien los bordes */
-  z-index: -1; /* Envía el fondo difuminado detrás del contenido */
+  filter: blur(1px);
+  transform: scale(1.1);
+  z-index: -1;
 }
 
 .hero__logo {
@@ -47,7 +45,7 @@
   height: auto;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 1));
   animation: float 3s ease-in-out infinite;
-  position: absolute; /* Centra el logo sin un contenedor */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

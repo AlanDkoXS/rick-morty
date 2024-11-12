@@ -6,7 +6,7 @@ function ResidentCard({ url }) {
   console.log('url ', url);
 
   const [resident, setResident] = useFetch();
-  const [flipped, setFlipped] = useState(false);  // Nuevo estado para manejar el giro
+  const [flipped, setFlipped] = useState(false); // Nuevo estado para manejar el giro
 
   useEffect(() => {
     setResident(url);
@@ -56,7 +56,7 @@ function ResidentCard({ url }) {
       <div className="card__back">
         <div className="card__info">
           <span className="card__info-item">
-            <span className="card__info-label">Species:</span>
+            <span className="card__info-label">Specimen:</span>
             {resident?.species}
           </span>
           <span className="card__info-item">

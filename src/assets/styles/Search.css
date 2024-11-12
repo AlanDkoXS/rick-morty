@@ -25,16 +25,16 @@
   font-size: 1rem;
   outline: none;
   cursor:
-  url('../img/cursor.svg') 48 48,
-  auto;
+    url('../img/cursor.svg') 48 48,
+    auto;
 }
 
 .search__btn:hover {
   background-color: #05292e;
   transform: scale(1.05);
   cursor:
-  url('../img/cursor.svg') 48 48,
-  auto;
+    url('../img/cursor.svg') 48 48,
+    auto;
 }
 
 .search__btn:active {
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: 1024px) {
-    .search{
-        margin-top: 5rem;
-    }
+  .search {
+    margin-top: 5rem;
+  }
 }

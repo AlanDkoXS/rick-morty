@@ -39,7 +39,7 @@ function App() {
       <div className="hero">
         <div className="hero__logo-container">
           <img
-            src="./src/assets/img/logo.svg"
+            src="/src/assets/img/logo.svg"
             alt="Logo"
             className="hero__logo"
           />

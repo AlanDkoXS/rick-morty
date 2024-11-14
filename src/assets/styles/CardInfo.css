@@ -16,6 +16,14 @@
   margin-bottom: 0.5em;
 }
 
+.cardInfo__col-size1 {
+  width: 20%;
+}
+
+.cardInfo__col-size2 {
+  width: 60%;
+}
+
 .cardInfo__title {
   margin-bottom: 0.2em;
   font-weight: bold;
@@ -29,7 +37,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
-  font-size: .7em;
+  font-size: 0.7em;
   width: 100%;
   justify-items: center;
   align-items: center;

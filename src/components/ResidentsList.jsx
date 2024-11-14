@@ -35,7 +35,7 @@ function ResidentsList({ residents,  resetPage, setResetPage}) {
       </div>
       <br />
       <div className='cards__pagination'>
-        <button onClick={() => onClickPage(1)} disabled={page === 1} className='cards__btn'>{'|<'}</button>
+        <button onClick={() => onClickPage(1)} disabled={page === 1} className='cards__btn'>{'First'}</button>
         <button onClick={onPrev} disabled={page === 1} className='cards__btn'>{'<'}</button>
         {itemBtn.map((item, index) => (
           <button key={index} onClick={() => onClickPage(item)} disabled={page === item} className='cards__btn'>
@@ -43,7 +43,7 @@ function ResidentsList({ residents,  resetPage, setResetPage}) {
           </button>
         ))}
         <button onClick={onNext} disabled={page === maxPage} className='cards__btn'>{'>'}</button>
-        <button onClick={() => onClickPage(maxPage)} disabled={page === maxPage} className='cards__btn'>{'>|'}</button>
+        <button onClick={() => onClickPage(maxPage)} disabled={page === maxPage} className='cards__btn'>{'Last'}</button>
         <p className='cards__page'>{page} / {maxPage}</p>
       </div>
 

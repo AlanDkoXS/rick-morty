@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0 auto;
   border-radius: 0.5em;
-  padding: 1.5em 0.5em;
+  padding: 1.5em 0.2em;
   color: #fff;
   text-align: center;
   margin-bottom: 1.5em;
@@ -13,18 +13,11 @@
 
 .cardInfo__name h2 {
   color: #c3d946;
-}
-
-.cardInfo__col-size1 {
-  width: 2%;
-}
-
-.cardInfo__col-size2 {
-  width: 44%;
+  margin-bottom: 0.5em;
 }
 
 .cardInfo__title {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
   font-weight: bold;
   text-align: center;
   display: flex;
@@ -36,7 +29,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
-  font-size: 13px;
+  font-size: .7em;
   width: 100%;
   justify-items: center;
   align-items: center;

@@ -7,7 +7,7 @@ import './assets/styles/App.css';
 
 function App() {
   const [location, setLocation, loadingLoc, errorLoc] = useFetch();
-  const [locationId, setLocationId] = useState(3);
+  const [locationId, setLocationId] = useState(1);
   const [resetPage, setResetPage] = useState(false);
   const [errorApi, setErrorApi] = useState(null);
 

@@ -21,7 +21,6 @@
   transition:
     transform 0.3s ease,
     scale 0.2s ease;
-  position: relative;
 }
 
 .card:hover {
@@ -149,4 +148,10 @@
   display: block;
   font-weight: 400;
   font-size: 0.8em;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 350px;
+  }
 }
